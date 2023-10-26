@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using HighLevel;
 using System.Threading;
 using System.Security.Cryptography;
+using Filter.GUI.Models.Interfaces;
 
 namespace FIlter.GUI.Models
 {

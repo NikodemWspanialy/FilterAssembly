@@ -1,4 +1,5 @@
 using Filter.GUI.Enum;
+using Filter.GUI.Mechanizm;
 using FIlter.GUI.Models;
 using System.Globalization;
 using System.Runtime.InteropServices;
@@ -77,7 +78,7 @@ namespace FIlter.GUI
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            var Program = new PropertiesModel();
+            var Program = new MainMechanizm();
             if (!Program.SetLenguage(lenguage))
             {
                 return;

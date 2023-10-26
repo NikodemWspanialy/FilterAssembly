@@ -1,5 +1,4 @@
-﻿using FIlter.GUI.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using HighLevel;
 using FIlter.GUI;
+using Filter.GUI.Models.Interfaces;
 
 namespace Filter.GUI.Models
 {
