@@ -1,0 +1,16 @@
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\x64\Debug\net7.0-windows\FIlter.GUI.exe
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\x64\Debug\net7.0-windows\FIlter.GUI.deps.json
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\x64\Debug\net7.0-windows\FIlter.GUI.runtimeconfig.json
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\x64\Debug\net7.0-windows\FIlter.GUI.dll
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\x64\Debug\net7.0-windows\FIlter.GUI.pdb
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.Form1.resources
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.csproj.GenerateResource.cache
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.AssemblyInfoInputs.cache
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.AssemblyInfo.cs
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.csproj.CoreCompileInputs.cache
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.dll
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\refint\FIlter.GUI.dll
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.pdb
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\FIlter.GUI.genruntimeconfig.cache
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\x64\Debug\net7.0-windows\ref\FIlter.GUI.dll
