@@ -1,18 +1,19 @@
 using Filter.GUI.Enum;
 using FIlter.GUI.Models;
+using System.Globalization;
 using System.Runtime.InteropServices;
 
 
 namespace FIlter.GUI
 {
-    public partial class Form1 : Form
+    public partial class FIltrApp : Form
     {
         uint threds = 1;
         Lenguage lenguage = Lenguage.CS;
         string pathToImage = String.Empty;
 
 
-        public Form1()
+        public FIltrApp()
         {
             InitializeComponent();
         }
@@ -42,13 +43,11 @@ namespace FIlter.GUI
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            DebugLenguageLabel.Text = "ASM";
             lenguage = Lenguage.ASM;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            DebugLenguageLabel.Text = "C#";
             lenguage = Lenguage.CS;
 
         }
@@ -93,12 +92,11 @@ namespace FIlter.GUI
                 return;
             }
             fileErrorLabel.Visible = false;
+            DateTime timeBefore = DateTime.Now;
             Program.run();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            DateTime timeAfter = DateTime.Now;
+            var timeEapsed = timeAfter.Subtract(timeBefore);
+            TimeList.Items.Add(timeEapsed.ToString());
         }
     }
 }

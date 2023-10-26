@@ -12,28 +12,20 @@ namespace FIlter.GUI.Services
     {
         public static byte[] ConvertToByteArray(Bitmap bitmap)
         {
-            int hi = 0, wi = 0;
             var array = new byte[bitmap.Height * bitmap.Width * 3];
             for (int i = 0; i < bitmap.Height; i++)
             {
                 for (int j = 0; j < bitmap.Width; j++)
                 {
-                    try
-                    {
-                        byte a = bitmap.GetPixel(j, i).A;
-                        byte r = bitmap.GetPixel(j, i).R;
-                        byte g = bitmap.GetPixel(j, i).G;
-                        byte b = bitmap.GetPixel(j, i).B;
-                        array[i * bitmap.Height + j * 3] = r;
-                        array[i *bitmap.Height + j * 3 + 1] = g;
-                        array[i *bitmap.Height + j * 3 + 2] = b;
 
-                    }
-                    catch (Exception)
-                    {
-                        hi = i;
-                        wi = 4 * j + 3;
-                    }
+                    byte r = bitmap.GetPixel(j, i).R;
+                    byte g = bitmap.GetPixel(j, i).G;
+                    byte b = bitmap.GetPixel(j, i).B;
+                    array[i * bitmap.Width * 3 + j * 3] = r;
+                    array[i * bitmap.Width * 3 + j * 3 + 1] = g;
+                    array[i * bitmap.Width * 3 + j * 3 + 2] = b;
+
+
                 }
             }
             return array;
@@ -44,17 +36,26 @@ namespace FIlter.GUI.Services
         }
         public static Bitmap ConvertToBitmap(byte[] image, int RowNumber)
         {
-            Bitmap bitmap = new Bitmap(RowNumber,(image.Length/3)/RowNumber);
+            Bitmap bitmap = new Bitmap(RowNumber, (image.Length / 3) / RowNumber);
             for (int i = 0; i < bitmap.Height; i++)
             {
                 for (int j = 0; j < bitmap.Width; j++)
                 {
-                    Color color = Color.FromArgb(image[i*RowNumber + j * 4], image[i*RowNumber+ 3 + 1],
-                        image[i*RowNumber+ j * 3 + 2]);
+                    Color color = Color.FromArgb(image[i * RowNumber * 3 + j * 3], image[i * RowNumber * 3 + j * 3 + 1],
+                        image[i * RowNumber * 3 + j * 3 + 2]);
                     bitmap.SetPixel(j, i, color);
                 }
             }
             return bitmap;
+        }
+        public static void SaveToFIle(Bitmap bitmap, string path, int t = 0)
+        {
+            string decsription = "_Ths" + t.ToString() + "_Date" + DateTime.Now.ToString() + ".jpg";
+            decsription = decsription.Replace(" ", "_");
+            decsription = decsription.Replace(":", "_");
+            string newPath = path.Replace(".jpg", decsription);
+            bitmap.Save(newPath);
+            
         }
     }
 }

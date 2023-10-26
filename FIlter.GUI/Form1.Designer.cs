@@ -1,6 +1,6 @@
 ﻿namespace FIlter.GUI
 {
-    partial class Form1
+    partial class FIltrApp
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             openFileDialog = new OpenFileDialog();
             FileButtton = new Button();
             FileLabel = new Label();
@@ -36,25 +35,14 @@
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
             LenguegeBox = new GroupBox();
-            DebugLenguageLabel = new Label();
             AddButton = new Button();
             MinusButton = new Button();
             ThreadLabel = new Label();
             ConfirmButton = new Button();
-            label1 = new Label();
             fileErrorLabel = new Label();
+            TimeList = new ListView();
             LenguegeBox.SuspendLayout();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(532, 180);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // openFileDialog
             // 
@@ -125,15 +113,6 @@
             LenguegeBox.TabStop = false;
             LenguegeBox.Text = "Lenguage";
             // 
-            // DebugLenguageLabel
-            // 
-            DebugLenguageLabel.AutoSize = true;
-            DebugLenguageLabel.Location = new Point(238, 177);
-            DebugLenguageLabel.Name = "DebugLenguageLabel";
-            DebugLenguageLabel.Size = new Size(38, 15);
-            DebugLenguageLabel.TabIndex = 7;
-            DebugLenguageLabel.Text = "label1";
-            // 
             // AddButton
             // 
             AddButton.Location = new Point(51, 255);
@@ -174,16 +153,6 @@
             ConfirmButton.UseVisualStyleBackColor = true;
             ConfirmButton.Click += ConfirmButton_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(444, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 12;
-            label1.Text = "label1";
-            label1.Click += label1_Click;
-            // 
             // fileErrorLabel
             // 
             fileErrorLabel.AutoSize = true;
@@ -196,25 +165,31 @@
             fileErrorLabel.Text = "Bład wyboru pliku!!!";
             fileErrorLabel.Visible = false;
             // 
-            // Form1
+            // TimeList
+            // 
+            TimeList.Location = new Point(254, 79);
+            TimeList.Name = "TimeList";
+            TimeList.Size = new Size(156, 350);
+            TimeList.TabIndex = 14;
+            TimeList.UseCompatibleStateImageBehavior = false;
+            // 
+            // FIltrApp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(452, 450);
+            Controls.Add(TimeList);
             Controls.Add(fileErrorLabel);
-            Controls.Add(label1);
             Controls.Add(ConfirmButton);
             Controls.Add(ThreadLabel);
             Controls.Add(MinusButton);
             Controls.Add(AddButton);
-            Controls.Add(DebugLenguageLabel);
             Controls.Add(LenguegeBox);
             Controls.Add(textLabel);
             Controls.Add(FileLabel);
             Controls.Add(FileButtton);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FIltrApp";
+            Text = "Filtr Biało Czarny";
             LenguegeBox.ResumeLayout(false);
             LenguegeBox.PerformLayout();
             ResumeLayout(false);
@@ -222,8 +197,6 @@
         }
 
         #endregion
-
-        private Button button1;
         private OpenFileDialog openFileDialog;
         private Button FileButtton;
         private Label FileLabel;
@@ -231,12 +204,11 @@
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private GroupBox LenguegeBox;
-        private Label DebugLenguageLabel;
         private Button AddButton;
         private Button MinusButton;
         private Label ThreadLabel;
         private Button ConfirmButton;
-        private Label label1;
         private Label fileErrorLabel;
+        private ListView TimeList;
     }
 }

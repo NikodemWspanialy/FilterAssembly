@@ -1,4 +1,3 @@
-C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.Form1.resources
 C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.csproj.GenerateResource.cache
 C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.AssemblyInfoInputs.cache
@@ -18,3 +17,4 @@ C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\Filt
 C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\Debug\net7.0-windows\HighLevel.dll
 C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\bin\Debug\net7.0-windows\HighLevel.pdb
 C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\Filter.GUI.csproj.CopyComplete
+C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.FIltrApp.resources

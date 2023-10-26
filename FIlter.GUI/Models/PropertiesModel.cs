@@ -1,5 +1,5 @@
 ﻿using Filter.GUI.Enum;
-using Filter.GUI.Services;
+using Filter.GUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,6 +19,7 @@ namespace FIlter.GUI.Models
         byte[] Image;
         int WidthNumber;
         string PathToImage = String.Empty;
+        IClass filter;
 
         public bool SetThreds(uint arg)
         {
@@ -64,22 +65,19 @@ namespace FIlter.GUI.Models
             switch (lenguage)
             {
                 case Lenguage.CS:
-                    {
-                        HighLevel.HighLevelFilter.filter(ref Image);
 
-                    }
-
+                    //HighLevel.HighLevelFilter.filter(ref Image);
+                    filter = new HighLvlClass(ref Image, threds);
                     break;
                 case Lenguage.ASM:
 
                     break;
-                default: return;
-
-
+                default:
+                    return;
             }
-            Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(Image,WidthNumber);
-            string newPath = PathToImage.Replace(".jpg", "_BlackAndWhite.jpg");
-            newBitmap.Save(newPath);
+            filter.Execute();
+            Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(Image, WidthNumber);
+            Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
         }
     }
 }
