@@ -167,9 +167,9 @@
             // 
             // TimeList
             // 
-            TimeList.Location = new Point(254, 79);
+            TimeList.Location = new Point(238, 79);
             TimeList.Name = "TimeList";
-            TimeList.Size = new Size(156, 350);
+            TimeList.Size = new Size(213, 350);
             TimeList.TabIndex = 14;
             TimeList.UseCompatibleStateImageBehavior = false;
             // 

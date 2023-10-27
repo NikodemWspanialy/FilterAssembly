@@ -19,11 +19,6 @@ namespace FIlter.GUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var AsmClass = new AsmClass(1, 2, 3);
-            AsmClass.Execute();
-        }
         private void FileButtton_Click(object sender, EventArgs e)
         {
 
@@ -78,11 +73,7 @@ namespace FIlter.GUI
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            var Program = new MainMechanizm();
-            if (!Program.SetLenguage(lenguage))
-            {
-                return;
-            }
+            var Program = new MainMechanizm(lenguage);
             if (!Program.SetThreds(threds))
             {
                 return;
@@ -93,11 +84,8 @@ namespace FIlter.GUI
                 return;
             }
             fileErrorLabel.Visible = false;
-            DateTime timeBefore = DateTime.Now;
-            Program.run();
-            DateTime timeAfter = DateTime.Now;
-            var timeEapsed = timeAfter.Subtract(timeBefore);
-            TimeList.Items.Add(timeEapsed.ToString());
+            var timeElpsed = Program.run();
+            TimeList.Items.Add(timeElpsed.ToString());
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Numerics;
 
-namespace FIlter.GUI.Services
+namespace Filter.GUI.Services
 {
     internal class ImageConverter
     {

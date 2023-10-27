@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Filter.GUI.Services;
 
 namespace Filter.GUI.Mechanizm
 {
@@ -16,12 +17,19 @@ namespace Filter.GUI.Mechanizm
     internal class MainMechanizm
     {
         private uint threds;
-        private Lenguage lenguage = Lenguage.CS;
+        private readonly Lenguage lenguage;
         private byte[] Image;
+        //potrzebne do konwerski powrotnej
         private int WidthNumber;
+        //path to image
         private string PathToImage = string.Empty;
-        IClass filter;
-
+        //part 2
+        List<IClass> funcs = new List<IClass>();
+        List<Thread> threads = new List<Thread>();
+        public MainMechanizm(Lenguage lenguage)
+        {
+            this.lenguage = lenguage;
+        }
         public bool SetThreds(uint arg)
         {
             try
@@ -31,54 +39,44 @@ namespace Filter.GUI.Mechanizm
             }
             catch (Exception ex) { return false; }
         }
-        public bool SetLenguage(Lenguage lenguage)
-        {
-            switch (lenguage)
-            {
-                case Lenguage.CS:
-                    lenguage = Lenguage.CS;
-                    return true;
-                    break;
-                case Lenguage.ASM:
-                    lenguage = Lenguage.ASM;
-                    return true;
-                    break;
-                default: return false;
-            }
-            return false;
-        }
-
         public bool SetImage(string file)
         {
             try
             {
 
                 PathToImage = file;
-                Bitmap oldBitmap = FIlter.GUI.Services.ImageConverter.GetBitMap(PathToImage);
+                Bitmap oldBitmap = Filter.GUI.Services.ImageConverter.GetBitMap(PathToImage);
                 WidthNumber = oldBitmap.Width;
-                Image = FIlter.GUI.Services.ImageConverter.ConvertToByteArray(oldBitmap);
+                Image = Filter.GUI.Services.ImageConverter.ConvertToByteArray(oldBitmap);
                 return true;
             }
             catch (Exception ex) { return false; }
         }
-        public void run()
+        public TimeSpan run()
         {
             switch (lenguage)
             {
                 case Lenguage.CS:
-
-                    //HighLevel.HighLevelFilter.filter(ref Image);
-                    filter = new HighLvlClass(ref Image, threds);
+                    funcs = ListInitiator.InitFuncsList(Lenguage.CS, threds, ref Image);
                     break;
                 case Lenguage.ASM:
-
+                    funcs = ListInitiator.InitFuncsList(Lenguage.ASM, threds, ref Image);
                     break;
                 default:
-                    return;
+                    break;
             }
-            filter.Execute();
-            Bitmap newBitmap = FIlter.GUI.Services.ImageConverter.ConvertToBitmap(Image, WidthNumber);
-            FIlter.GUI.Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
+            DateTime timeBefore = DateTime.Now;
+            foreach (var f in funcs) { threads.Add(new Thread(new ThreadStart(f.Execute))); }
+            foreach (var t in threads) { t.Start(); }
+            foreach (var t in threads)
+            {
+                t.Join();
+                //tu mozna progress bara wywolywac :DD
+            }
+            DateTime timeAfter = DateTime.Now;
+            Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(Image, WidthNumber);
+            Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
+            return timeAfter.Subtract(timeBefore);
         }
     }
 }
