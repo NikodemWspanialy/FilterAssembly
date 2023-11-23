@@ -11,7 +11,7 @@ namespace FIlter.GUI
     {
         uint threds = 1;
         Lenguage lenguage = Lenguage.CS;
-        string pathToImage = String.Empty;
+        string pathToImage = @"C:\Users\nikod\Desktop\ma³pa.jpg";
 
 
         public FIltrApp()
@@ -86,6 +86,11 @@ namespace FIlter.GUI
             fileErrorLabel.Visible = false;
             var timeElpsed = Program.run();
             TimeList.Items.Add(timeElpsed.ToString());
+        }
+
+        private void textLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

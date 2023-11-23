@@ -6,31 +6,37 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using HighLevel;
 using System.Threading;
 using System.Security.Cryptography;
 using Filter.GUI.Models.Interfaces;
+using System.Collections;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace FIlter.GUI.Models
 {
+
     internal class AsmClass : IClass
     {
         private byte[] bytes;
+        private byte[] returnBytes;
         private long startPoint;
         private long endPoint;
 
-        [DllImport("C:\\PRJs\\ASM_PRJs\\FIlter.GuiAndAssembler\\x64\\Debug\\Assembly.dll")]
-        private static extern ulong averageRGB(ref byte[] bytes, long sp, long ep);
-
-        public AsmClass(ref byte[] obraz, long sp, long ep)
+        
+        [DllImport("C:\\PRJs\\ASM_PRJs\\Filter\\x64\\Debug\\Assembly.dll")]
+        public static extern void filter(byte[] p, long sp, long ep, byte[] r);
+        
+        public AsmClass(ref byte[] obraz, long sp, long ep, ref byte[] returnImage)
         {
             bytes = obraz;
             startPoint = sp;
             endPoint = ep;
+            returnBytes = returnImage;
         }
         public void Execute()
         {
-            averageRGB(ref bytes, startPoint, endPoint);
+                filter(bytes, startPoint, endPoint, returnBytes);
         }
     }
 }

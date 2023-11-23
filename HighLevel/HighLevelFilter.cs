@@ -4,7 +4,7 @@ namespace HighLevel
 {
     public class HighLevelFilter
     {
-        public static void filter(ref byte[] image, long startPoint = 0, long endPoint = 0)
+        public static void filter(ref byte[] image, long startPoint, long endPoint, ref byte[] returnImage)
         {
 
             if (endPoint != 0)
@@ -20,9 +20,9 @@ namespace HighLevel
                         int b = image[i + 2];
                         double srednia = (r + b + g) / 3;
                         int sredniaint = (int)Math.Round(srednia);
-                        image[i + 0] = (byte)sredniaint;
-                        image[i + 1] = (byte)sredniaint;
-                        image[i + 2] = (byte)sredniaint;
+                        returnImage[i + 0] = (byte)sredniaint;
+                        returnImage[i + 1] = (byte)sredniaint;
+                        returnImage[i + 2] = (byte)sredniaint;
                     }
                     catch (Exception e)
                     {
@@ -40,9 +40,9 @@ namespace HighLevel
                     int b = image[i + 2];
                     double srednia = (r + b + g) / 3;
                     int sredniaint = (int)Math.Round(srednia);
-                    image[i + 0] = (byte)sredniaint;
-                    image[i + 1] = (byte)sredniaint;
-                    image[i + 2] = (byte)sredniaint;
+                    returnImage[i + 0] = (byte)sredniaint;
+                    returnImage[i + 1] = (byte)sredniaint;
+                    returnImage[i + 2] = (byte)sredniaint;
                 }
 
             }

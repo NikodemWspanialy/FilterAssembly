@@ -1,4 +1,6 @@
-namespace FIlter.GUI
+using FIlter.GUI;
+
+namespace Filter.GUI
 {
     internal static class Program
     {

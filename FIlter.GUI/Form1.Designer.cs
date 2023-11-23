@@ -71,9 +71,10 @@
             textLabel.AutoSize = true;
             textLabel.Location = new Point(205, 48);
             textLabel.Name = "textLabel";
-            textLabel.Size = new Size(27, 15);
+            textLabel.Size = new Size(12, 15);
             textLabel.TabIndex = 3;
-            textLabel.Text = "%%";
+            textLabel.Text = "*\r\n";
+            textLabel.Click += textLabel_Click;
             // 
             // radioButton1
             // 

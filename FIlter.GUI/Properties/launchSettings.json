@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Filter.GUI": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

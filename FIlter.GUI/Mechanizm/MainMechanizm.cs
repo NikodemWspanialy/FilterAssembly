@@ -19,6 +19,7 @@ namespace Filter.GUI.Mechanizm
         private uint threds;
         private readonly Lenguage lenguage;
         private byte[] Image;
+        private byte[] returnImage;
         //potrzebne do konwerski powrotnej
         private int WidthNumber;
         //path to image
@@ -54,13 +55,14 @@ namespace Filter.GUI.Mechanizm
         }
         public TimeSpan run()
         {
+            returnImage = new byte[Image.Length];
             switch (lenguage)
             {
                 case Lenguage.CS:
-                    funcs = ListInitiator.InitFuncsList(Lenguage.CS, threds, ref Image);
+                    funcs = ListInitiator.InitFuncsList(Lenguage.CS, threds, ref Image, ref returnImage);
                     break;
                 case Lenguage.ASM:
-                    funcs = ListInitiator.InitFuncsList(Lenguage.ASM, threds, ref Image);
+                    funcs = ListInitiator.InitFuncsList(Lenguage.ASM, threds, ref Image, ref returnImage);
                     break;
                 default:
                     break;
@@ -68,13 +70,14 @@ namespace Filter.GUI.Mechanizm
             DateTime timeBefore = DateTime.Now;
             foreach (var f in funcs) { threads.Add(new Thread(new ThreadStart(f.Execute))); }
             foreach (var t in threads) { t.Start(); }
-            foreach (var t in threads)
+            foreach (var t in 
+                threads)
             {
                 t.Join();
                 //tu mozna progress bara wywolywac :DD
             }
             DateTime timeAfter = DateTime.Now;
-            Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(Image, WidthNumber);
+            Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(returnImage, WidthNumber);
             Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
             return timeAfter.Subtract(timeBefore);
         }

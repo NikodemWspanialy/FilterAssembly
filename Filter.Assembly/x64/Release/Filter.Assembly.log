@@ -1,3 +1,0 @@
-﻿  Assembling ASM.asm...
-LINK : error LNK2001: unresolved external symbol _DllMainCRTStartup
-C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\x64\Release\Assembly.dll : fatal error LNK1120: 1 unresolved externals

@@ -1,5 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Filter.Assembly.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Assembling ASM.asm...
-     Creating library C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\x64\Debug\Assembly.lib and object C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\x64\Debug\Assembly.exp
-Assembly.exp : warning LNK4070: /OUT:JAAsm.dll directive in .EXP differs from output filename 'C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\x64\Debug\Assembly.dll'; ignoring directive
-  Filter.Assembly.vcxproj -> C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\x64\Debug\Assembly.dll

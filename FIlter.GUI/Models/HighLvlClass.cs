@@ -13,17 +13,19 @@ namespace Filter.GUI.Models
     internal class HighLvlClass : IClass
     {
         private byte[] bytes;
+        private byte[] returnBytes;
         private long startPoint;
         private long endPoint;   
-        public HighLvlClass(ref byte[] obraz, long sp, long ep)
+        public HighLvlClass(ref byte[] obraz, long sp, long ep, ref byte[] returnImage)
         {
             bytes = obraz;
             startPoint= sp;
             endPoint= ep;
+            returnBytes = returnImage;
         }
         public void Execute()
         {
-            HighLevel.HighLevelFilter.filter(ref bytes, startPoint,endPoint);
+            HighLevel.HighLevelFilter.filter(ref bytes, startPoint,endPoint, ref returnBytes);
         }
     }
 }

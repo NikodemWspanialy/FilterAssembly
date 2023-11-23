@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Filter.GUI
-build_property.ProjectDir = C:\PRJs\ASM_PRJs\FIlter.GuiAndAssembler\FIlter.GUI\
+build_property.ProjectDir = C:\PRJs\ASM_PRJs\Filter\Filter.GUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -12,7 +12,7 @@ namespace Filter.GUI.Services
 {
     internal class ListInitiator
     {
-        public static List<IClass> InitFuncsList(Lenguage lenguage, uint threadNumber, ref byte[] image)
+        public static List<IClass> InitFuncsList(Lenguage lenguage, uint threadNumber, ref byte[] image, ref byte[] returnImage)
         {
             List<IClass> newList = new List<IClass>();
             if(threadNumber == 1)
@@ -20,10 +20,10 @@ namespace Filter.GUI.Services
                 switch (lenguage)
                 {
                     case Lenguage.ASM:
-                        newList.Add(new AsmClass(ref image, 0, image.Length));
+                        newList.Add(new AsmClass(ref image, 0, image.Length,ref returnImage));
                         break;
                     case Lenguage.CS:
-                        newList.Add(new HighLvlClass(ref image, 0, image.Length));
+                        newList.Add(new HighLvlClass(ref image, 0, image.Length, ref returnImage));
                         break;
                     default:
                         break;
@@ -43,11 +43,11 @@ namespace Filter.GUI.Services
                 switch (lenguage)
                 {
                     case Lenguage.ASM:
-                        newList.Add(new AsmClass(ref image, currentPoint, currentPoint + ave));
+                        newList.Add(new AsmClass(ref image, currentPoint, currentPoint + ave, ref returnImage));
                         currentPoint += ave;
                         break;
                     case Lenguage.CS:
-                        newList.Add(new HighLvlClass(ref image, currentPoint, currentPoint + ave));
+                        newList.Add(new HighLvlClass(ref image, currentPoint, currentPoint + ave, ref returnImage));
                         currentPoint += ave;
                         break;
                     default:
@@ -57,10 +57,10 @@ namespace Filter.GUI.Services
             switch (lenguage)
             {
                 case Lenguage.ASM:
-                    newList.Add(new AsmClass(ref image, currentPoint, endPoint));
+                    newList.Add(new AsmClass(ref image, currentPoint, endPoint, ref returnImage));
                     break;
                 case Lenguage.CS:
-                    newList.Add(new HighLvlClass(ref image, currentPoint, endPoint));
+                    newList.Add(new HighLvlClass(ref image, currentPoint, endPoint, ref returnImage));
                     break;
                 default:
                     break;

@@ -6,15 +6,28 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "FIlter.GUI/1.0.0": {
+      "Filter.GUI/1.0.0": {
+        "dependencies": {
+          "HighLevel": "1.0.0"
+        },
         "runtime": {
-          "FIlter.GUI.dll": {}
+          "Filter.GUI.dll": {}
+        }
+      },
+      "HighLevel/1.0.0": {
+        "runtime": {
+          "HighLevel.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "FIlter.GUI/1.0.0": {
+    "Filter.GUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HighLevel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
