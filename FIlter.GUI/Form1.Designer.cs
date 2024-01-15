@@ -30,7 +30,6 @@
         {
             openFileDialog = new OpenFileDialog();
             FileButtton = new Button();
-            FileLabel = new Label();
             textLabel = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -40,8 +39,15 @@
             ThreadLabel = new Label();
             ConfirmButton = new Button();
             fileErrorLabel = new Label();
+            baseImage = new PictureBox();
+            editImage = new PictureBox();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
             TimeList = new ListView();
             LenguegeBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)baseImage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)editImage).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // openFileDialog
@@ -50,30 +56,25 @@
             // 
             // FileButtton
             // 
+            FileButtton.BackColor = Color.Khaki;
             FileButtton.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            FileButtton.Location = new Point(32, 26);
+            FileButtton.Location = new Point(20, 37);
             FileButtton.Name = "FileButtton";
-            FileButtton.Size = new Size(153, 50);
+            FileButtton.Size = new Size(144, 39);
             FileButtton.TabIndex = 2;
             FileButtton.Text = "Choose file";
-            FileButtton.UseVisualStyleBackColor = true;
+            FileButtton.UseVisualStyleBackColor = false;
             FileButtton.Click += FileButtton_Click;
-            // 
-            // FileLabel
-            // 
-            FileLabel.Location = new Point(0, 0);
-            FileLabel.Name = "FileLabel";
-            FileLabel.Size = new Size(100, 23);
-            FileLabel.TabIndex = 0;
             // 
             // textLabel
             // 
             textLabel.AutoSize = true;
-            textLabel.Location = new Point(205, 48);
+            textLabel.Location = new Point(23, 77);
             textLabel.Name = "textLabel";
             textLabel.Size = new Size(12, 15);
             textLabel.TabIndex = 3;
             textLabel.Text = "*\r\n";
+            textLabel.Visible = false;
             textLabel.Click += textLabel_Click;
             // 
             // radioButton1
@@ -107,16 +108,16 @@
             LenguegeBox.Controls.Add(radioButton2);
             LenguegeBox.Controls.Add(radioButton1);
             LenguegeBox.Font = new Font("Segoe UI Emoji", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LenguegeBox.Location = new Point(32, 114);
+            LenguegeBox.Location = new Point(11, 115);
             LenguegeBox.Name = "LenguegeBox";
-            LenguegeBox.Size = new Size(200, 108);
+            LenguegeBox.Size = new Size(153, 108);
             LenguegeBox.TabIndex = 6;
             LenguegeBox.TabStop = false;
             LenguegeBox.Text = "Lenguage";
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(51, 255);
+            AddButton.Location = new Point(20, 252);
             AddButton.Name = "AddButton";
             AddButton.Size = new Size(19, 23);
             AddButton.TabIndex = 8;
@@ -126,7 +127,7 @@
             // 
             // MinusButton
             // 
-            MinusButton.Location = new Point(51, 286);
+            MinusButton.Location = new Point(20, 279);
             MinusButton.Name = "MinusButton";
             MinusButton.Size = new Size(19, 23);
             MinusButton.TabIndex = 9;
@@ -138,7 +139,7 @@
             // 
             ThreadLabel.AutoSize = true;
             ThreadLabel.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            ThreadLabel.Location = new Point(86, 255);
+            ThreadLabel.Location = new Point(44, 21);
             ThreadLabel.Name = "ThreadLabel";
             ThreadLabel.Size = new Size(45, 54);
             ThreadLabel.TabIndex = 10;
@@ -146,12 +147,14 @@
             // 
             // ConfirmButton
             // 
-            ConfirmButton.Location = new Point(32, 358);
+            ConfirmButton.BackColor = Color.Khaki;
+            ConfirmButton.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            ConfirmButton.Location = new Point(11, 308);
             ConfirmButton.Name = "ConfirmButton";
-            ConfirmButton.Size = new Size(75, 23);
+            ConfirmButton.Size = new Size(153, 32);
             ConfirmButton.TabIndex = 11;
             ConfirmButton.Text = "Wyślij";
-            ConfirmButton.UseVisualStyleBackColor = true;
+            ConfirmButton.UseVisualStyleBackColor = false;
             ConfirmButton.Click += ConfirmButton_Click;
             // 
             // fileErrorLabel
@@ -159,40 +162,96 @@
             fileErrorLabel.AutoSize = true;
             fileErrorLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             fileErrorLabel.ForeColor = Color.Red;
-            fileErrorLabel.Location = new Point(35, 79);
+            fileErrorLabel.Location = new Point(23, 79);
             fileErrorLabel.Name = "fileErrorLabel";
-            fileErrorLabel.Size = new Size(194, 25);
+            fileErrorLabel.Size = new Size(112, 25);
             fileErrorLabel.TabIndex = 13;
-            fileErrorLabel.Text = "Bład wyboru pliku!!!";
+            fileErrorLabel.Text = "Error in file";
             fileErrorLabel.Visible = false;
+            fileErrorLabel.Click += fileErrorLabel_Click;
+            // 
+            // baseImage
+            // 
+            baseImage.Location = new Point(280, 26);
+            baseImage.MaximumSize = new Size(128, 128);
+            baseImage.Name = "baseImage";
+            baseImage.Size = new Size(128, 128);
+            baseImage.SizeMode = PictureBoxSizeMode.Zoom;
+            baseImage.TabIndex = 15;
+            baseImage.TabStop = false;
+            baseImage.Click += pictureBox1_Click;
+            // 
+            // editImage
+            // 
+            editImage.Location = new Point(280, 177);
+            editImage.MaximumSize = new Size(128, 128);
+            editImage.Name = "editImage";
+            editImage.Size = new Size(121, 128);
+            editImage.SizeMode = PictureBoxSizeMode.Zoom;
+            editImage.TabIndex = 16;
+            editImage.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(ThreadLabel);
+            groupBox1.Font = new Font("Segoe UI Emoji", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox1.Location = new Point(11, 229);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(153, 76);
+            groupBox1.TabIndex = 17;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Threads";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Font = new Font("Segoe UI Emoji", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            groupBox2.Location = new Point(185, 38);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(85, 315);
+            groupBox2.TabIndex = 18;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "results";
             // 
             // TimeList
             // 
-            TimeList.Location = new Point(238, 79);
+            TimeList.BackColor = Color.Khaki;
+            TimeList.Font = new Font("Segoe UI Emoji", 8.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            TimeList.Location = new Point(194, 63);
+            TimeList.Margin = new Padding(0);
             TimeList.Name = "TimeList";
-            TimeList.Size = new Size(213, 350);
+            TimeList.RightToLeft = RightToLeft.Yes;
+            TimeList.Size = new Size(68, 277);
             TimeList.TabIndex = 14;
             TimeList.UseCompatibleStateImageBehavior = false;
+            TimeList.View = View.List;
             // 
             // FIltrApp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(229, 255, 204);
             ClientSize = new Size(452, 450);
             Controls.Add(TimeList);
+            Controls.Add(groupBox2);
+            Controls.Add(editImage);
+            Controls.Add(baseImage);
             Controls.Add(fileErrorLabel);
             Controls.Add(ConfirmButton);
-            Controls.Add(ThreadLabel);
             Controls.Add(MinusButton);
             Controls.Add(AddButton);
             Controls.Add(LenguegeBox);
             Controls.Add(textLabel);
-            Controls.Add(FileLabel);
             Controls.Add(FileButtton);
+            Controls.Add(groupBox1);
             Name = "FIltrApp";
             Text = "Filtr Biało Czarny";
+            Load += FIltrApp_Load;
             LenguegeBox.ResumeLayout(false);
             LenguegeBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)baseImage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)editImage).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -200,7 +259,6 @@
         #endregion
         private OpenFileDialog openFileDialog;
         private Button FileButtton;
-        private Label FileLabel;
         private Label textLabel;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
@@ -210,6 +268,10 @@
         private Label ThreadLabel;
         private Button ConfirmButton;
         private Label fileErrorLabel;
+        private PictureBox baseImage;
+        private PictureBox editImage;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
         private ListView TimeList;
     }
 }

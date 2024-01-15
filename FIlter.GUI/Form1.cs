@@ -11,7 +11,7 @@ namespace FIlter.GUI
     {
         uint threds = 1;
         Lenguage lenguage = Lenguage.CS;
-        string pathToImage = @"C:\Users\nikod\Desktop\ma³pa.jpg";
+        string pathToImage;
 
 
         public FIltrApp()
@@ -33,6 +33,17 @@ namespace FIlter.GUI
                 {
                     textLabel.Text = openFileDialog.FileName;
                     pathToImage = openFileDialog.FileName;
+                }
+                if (pathToImage != null)
+                {
+                    try
+                    {
+                        baseImage.ImageLocation = pathToImage;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
                 }
             }
         }
@@ -73,22 +84,62 @@ namespace FIlter.GUI
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
+            ConfirmButton.Enabled = false;
             var Program = new MainMechanizm(lenguage);
             if (!Program.SetThreds(threds))
             {
+                ConfirmButton.Enabled = true;
                 return;
             }
             if (!Program.SetImage(pathToImage))
             {
+                ConfirmButton.Enabled = true;
+
                 fileErrorLabel.Visible = true;
                 return;
             }
             fileErrorLabel.Visible = false;
             var timeElpsed = Program.run();
-            TimeList.Items.Add(timeElpsed.ToString());
+            var seconds = timeElpsed.Seconds;
+            var miliseconds = timeElpsed.Milliseconds;
+            var item = seconds.ToString() + ".";
+            if(miliseconds >= 100)
+            {
+                item = item + miliseconds.ToString();
+            }
+            else if(miliseconds >= 10)
+            {
+                item = item + "0" + miliseconds.ToString();
+            }
+            else
+            {
+                item = item + "00" + miliseconds.ToString();
+            }
+            TimeList.Items.Add(item.ToString());
+            if (Program.newImagePath != null)
+            {
+                editImage.ImageLocation = Program.newImagePath;
+            }
+            ConfirmButton.Enabled = true;
+
         }
 
         private void textLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FIltrApp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileErrorLabel_Click(object sender, EventArgs e)
         {
 
         }

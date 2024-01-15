@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PRJs\\ASM_PRJs\\Filter\\HighLevel\\HighLevel.csproj": {}
+    "C:\\PRJs\\ASM_PRJs\\gh\\HighLevel\\HighLevel.csproj": {}
   },
   "projects": {
-    "C:\\PRJs\\ASM_PRJs\\Filter\\HighLevel\\HighLevel.csproj": {
+    "C:\\PRJs\\ASM_PRJs\\gh\\HighLevel\\HighLevel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PRJs\\ASM_PRJs\\Filter\\HighLevel\\HighLevel.csproj",
+        "projectUniqueName": "C:\\PRJs\\ASM_PRJs\\gh\\HighLevel\\HighLevel.csproj",
         "projectName": "HighLevel",
-        "projectPath": "C:\\PRJs\\ASM_PRJs\\Filter\\HighLevel\\HighLevel.csproj",
+        "projectPath": "C:\\PRJs\\ASM_PRJs\\gh\\HighLevel\\HighLevel.csproj",
         "packagesPath": "C:\\Users\\nikod\\.nuget\\packages\\",
-        "outputPath": "C:\\PRJs\\ASM_PRJs\\Filter\\HighLevel\\obj\\",
+        "outputPath": "C:\\PRJs\\ASM_PRJs\\gh\\HighLevel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

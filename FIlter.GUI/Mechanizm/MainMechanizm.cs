@@ -24,6 +24,7 @@ namespace Filter.GUI.Mechanizm
         private int WidthNumber;
         //path to image
         private string PathToImage = string.Empty;
+        public string? newImagePath { get; set; }
         //part 2
         List<IClass> funcs = new List<IClass>();
         List<Thread> threads = new List<Thread>();
@@ -55,6 +56,7 @@ namespace Filter.GUI.Mechanizm
         }
         public TimeSpan run()
         {
+            DateTime timeBefore = DateTime.Now;
             returnImage = new byte[Image.Length];
             switch (lenguage)
             {
@@ -67,7 +69,6 @@ namespace Filter.GUI.Mechanizm
                 default:
                     break;
             }
-            DateTime timeBefore = DateTime.Now;
             foreach (var f in funcs) { threads.Add(new Thread(new ThreadStart(f.Execute))); }
             foreach (var t in threads) { t.Start(); }
             foreach (var t in 
@@ -78,7 +79,7 @@ namespace Filter.GUI.Mechanizm
             }
             DateTime timeAfter = DateTime.Now;
             Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(returnImage, WidthNumber);
-            Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
+            newImagePath = Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
             return timeAfter.Subtract(timeBefore);
         }
     }

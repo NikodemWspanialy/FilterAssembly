@@ -48,14 +48,27 @@ namespace Filter.GUI.Services
             }
             return bitmap;
         }
-        public static void SaveToFIle(Bitmap bitmap, string path, int t = 0)
+        public static string SaveToFIle(Bitmap bitmap, string path, int t = 0)
         {
+            if (path.Contains(".jpg"))
+            {
             string decsription = "_Ths" + t.ToString() + "_Date" + DateTime.Now.ToString() + ".jpg";
             decsription = decsription.Replace(" ", "_");
             decsription = decsription.Replace(":", "_");
             string newPath = path.Replace(".jpg", decsription);
             bitmap.Save(newPath);
-            
+            return newPath;
+            }
+            else if (path.Contains(".bmp"))
+            {
+                string decsription = "_Ths" + t.ToString() + "_Date" + DateTime.Now.ToString() + ".bmp";
+                decsription = decsription.Replace(" ", "_");
+                decsription = decsription.Replace(":", "_");
+                string newPath = path.Replace(".bmp", decsription);
+                bitmap.Save(newPath);
+                return newPath;
+            }
+            else { return path; }
         }
     }
 }
