@@ -9,7 +9,7 @@ namespace FIlter.GUI
 {
     public partial class FIltrApp : Form
     {
-        uint threds = 1;
+        uint threds = (uint)Environment.ProcessorCount;
         Lenguage lenguage = Lenguage.CS;
         string pathToImage;
 
@@ -17,6 +17,7 @@ namespace FIlter.GUI
         public FIltrApp()
         {
             InitializeComponent();
+            ThreadLabel.Text = threds.ToString();
         }
 
         private void FileButtton_Click(object sender, EventArgs e)
@@ -103,11 +104,11 @@ namespace FIlter.GUI
             var seconds = timeElpsed.Seconds;
             var miliseconds = timeElpsed.Milliseconds;
             var item = seconds.ToString() + ".";
-            if(miliseconds >= 100)
+            if (miliseconds >= 100)
             {
                 item = item + miliseconds.ToString();
             }
-            else if(miliseconds >= 10)
+            else if (miliseconds >= 10)
             {
                 item = item + "0" + miliseconds.ToString();
             }
@@ -140,6 +141,11 @@ namespace FIlter.GUI
         }
 
         private void fileErrorLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThreadLabel_Click(object sender, EventArgs e)
         {
 
         }
