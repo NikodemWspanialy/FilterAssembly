@@ -18,16 +18,16 @@ namespace FIlter.GUI.Models
 
     internal class AsmClass : IClass
     {
-        private byte[] bytes;
-        private byte[] returnBytes;
+        private float[] bytes;
+        private float[] returnBytes;
         private long startPoint;
         private long endPoint;
 
         
-        [DllImport(@"C:\PRJs\ASM_PRJs\gh\x64\Release\Assembly.dll")]
-        public static extern void filter(byte[] p, long sp, long ep, byte[] r);
+        [DllImport(@"C:\PRJs\ASM_PRJs\gh\x64\Debug\Assembly.dll")]
+        public static extern void filter(float[] p, long sp, long ep, float[] r);
         
-        public AsmClass(ref byte[] obraz, long sp, long ep, ref byte[] returnImage)
+        public AsmClass(ref float[] obraz, long sp, long ep, ref float[] returnImage)
         {
             bytes = obraz;
             startPoint = sp;

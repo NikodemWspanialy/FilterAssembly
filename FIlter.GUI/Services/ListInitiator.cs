@@ -12,7 +12,7 @@ namespace Filter.GUI.Services
 {
     internal class ListInitiator
     {
-        public static List<IClass> InitFuncsList(Lenguage lenguage, uint threadNumber, ref byte[] image, ref byte[] returnImage)
+        public static List<IClass> InitFuncsList(Lenguage lenguage, uint threadNumber, ref float[] image, ref float[] returnImage)
         {
             List<IClass> newList = new List<IClass>();
             if(threadNumber == 1)
@@ -31,7 +31,7 @@ namespace Filter.GUI.Services
                 return newList;
             }
             long ave = image.Length / threadNumber;
-            while(ave % 3 == 0)
+            while(ave % 4 != 0)
             {
                 --ave;
             }

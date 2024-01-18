@@ -18,8 +18,8 @@ namespace Filter.GUI.Mechanizm
     {
         private uint threds;
         private readonly Lenguage lenguage;
-        private byte[] Image;
-        private byte[] returnImage;
+        private float[] Image;
+        private float[] returnImage;
         //potrzebne do konwerski powrotnej
         private int WidthNumber;
         //path to image
@@ -27,7 +27,7 @@ namespace Filter.GUI.Mechanizm
         public string? newImagePath { get; set; }
         //part 2
         List<IClass> funcs = new List<IClass>();
-        List<Thread> threads = new List<Thread>();
+        List<Task> threads = new List<Task>();
         public MainMechanizm(Lenguage lenguage)
         {
             this.lenguage = lenguage;
@@ -56,8 +56,7 @@ namespace Filter.GUI.Mechanizm
         }
         public TimeSpan run()
         {
-            DateTime timeBefore = DateTime.Now;
-            returnImage = new byte[Image.Length];
+            returnImage = new float[Image.Length];
             switch (lenguage)
             {
                 case Lenguage.CS:
@@ -69,17 +68,24 @@ namespace Filter.GUI.Mechanizm
                 default:
                     break;
             }
-            foreach (var f in funcs) { threads.Add(new Thread(new ThreadStart(f.Execute))); }
-            foreach (var t in threads) { t.Start(); }
-            foreach (var t in 
-                threads)
+            foreach (var f in funcs) { threads.Add(new Task(() => f.Execute())); }
+
+            DateTime timeBefore = DateTime.Now;
             {
-                t.Join();
-                //tu mozna progress bara wywolywac :DD
+                Parallel.ForEach(threads, (task) => task.Start());
+                Task.WaitAll(threads.ToArray());
+
+                //Test
+                //int numer = 1;
+                //threads[numer].Start();
+                //Task.WaitAll(threads[numer]);
+                //koniec testu
             }
             DateTime timeAfter = DateTime.Now;
+
             Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(returnImage, WidthNumber);
             newImagePath = Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
+
             return timeAfter.Subtract(timeBefore);
         }
     }

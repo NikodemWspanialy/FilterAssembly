@@ -12,11 +12,11 @@ namespace Filter.GUI.Models
 {
     internal class HighLvlClass : IClass
     {
-        private byte[] bytes;
-        private byte[] returnBytes;
+        private float[] bytes;
+        private float[] returnBytes;
         private long startPoint;
         private long endPoint;   
-        public HighLvlClass(ref byte[] obraz, long sp, long ep, ref byte[] returnImage)
+        public HighLvlClass(ref float[] obraz, long sp, long ep, ref float[] returnImage)
         {
             bytes = obraz;
             startPoint= sp;
