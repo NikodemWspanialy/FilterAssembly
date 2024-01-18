@@ -1,4 +1,5 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using System;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HighLevel
 {
@@ -6,7 +7,7 @@ namespace HighLevel
     {
         public static void filter(ref float[] image, long startPoint, long endPoint, ref float[] returnImage)
         {
-            float[] dzielnik = new float[] {0.33f,0.33f,0.33f,1.0f };
+            float[] dzielnik = new float[] { 0.33f, 0.33f, 0.33f, 1.0f };
             if (endPoint != 0)
             {
 

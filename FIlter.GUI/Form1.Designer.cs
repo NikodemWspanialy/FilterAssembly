@@ -144,6 +144,7 @@
             ThreadLabel.Size = new Size(45, 54);
             ThreadLabel.TabIndex = 10;
             ThreadLabel.Text = "1";
+            ThreadLabel.Click += ThreadLabel_Click;
             // 
             // ConfirmButton
             // 

@@ -15,17 +15,17 @@ namespace Filter.GUI.Models
         private float[] bytes;
         private float[] returnBytes;
         private long startPoint;
-        private long endPoint;   
+        private long endPoint;
         public HighLvlClass(ref float[] obraz, long sp, long ep, ref float[] returnImage)
         {
             bytes = obraz;
-            startPoint= sp;
-            endPoint= ep;
+            startPoint = sp;
+            endPoint = ep;
             returnBytes = returnImage;
         }
         public void Execute()
         {
-            HighLevel.HighLevelFilter.filter(ref bytes, startPoint,endPoint, ref returnBytes);
+            HighLevel.HighLevelFilter.filter(ref bytes, startPoint, endPoint, ref returnBytes);
         }
     }
 }
