@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using HighLevel;
+using CSharp;
 using FIlter.GUI;
 using Filter.GUI.Models.Interfaces;
 
@@ -25,7 +25,7 @@ namespace Filter.GUI.Models
         }
         public void Execute()
         {
-            HighLevel.HighLevelFilter.filter(ref bytes, startPoint, endPoint, ref returnBytes);
+            CSharp.Filter.filter(ref bytes, startPoint, endPoint, ref returnBytes);
         }
     }
 }

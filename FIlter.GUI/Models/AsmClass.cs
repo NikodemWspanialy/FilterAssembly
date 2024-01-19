@@ -12,6 +12,7 @@ using Filter.GUI.Models.Interfaces;
 using System.Collections;
 using System.Diagnostics;
 using System.Reflection;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FIlter.GUI.Models
 {
@@ -23,10 +24,9 @@ namespace FIlter.GUI.Models
         private long startPoint;
         private long endPoint;
 
-        
         [DllImport(@"C:\PRJs\ASM_PRJs\gh\x64\Debug\Assembly.dll")]
         public static extern void filter(float[] p, long sp, long ep, float[] r);
-        
+
         public AsmClass(ref float[] obraz, long sp, long ep, ref float[] returnImage)
         {
             bytes = obraz;

@@ -31,7 +31,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HighLevel\HighLevel.csproj" />
+    <PackageReference Include="OxyPlot.WindowsForms" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CSharp">
+      <HintPath>..\CSharp\bin\Debug\CSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

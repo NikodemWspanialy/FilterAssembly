@@ -1,0 +1,6 @@
+C:\PRJs\ASM_PRJs\gh\CSharp\bin\Release\CSharp.dll
+C:\PRJs\ASM_PRJs\gh\CSharp\bin\Release\CSharp.pdb
+C:\PRJs\ASM_PRJs\gh\CSharp\obj\Release\CSharp.csproj.AssemblyReference.cache
+C:\PRJs\ASM_PRJs\gh\CSharp\obj\Release\CSharp.csproj.CoreCompileInputs.cache
+C:\PRJs\ASM_PRJs\gh\CSharp\obj\Release\CSharp.dll
+C:\PRJs\ASM_PRJs\gh\CSharp\obj\Release\CSharp.pdb

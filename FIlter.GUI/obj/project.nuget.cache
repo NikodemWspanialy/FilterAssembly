@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pFAwQJ32LSyiuhRtEvZ10DceYFXwJRnO6A51MS8F3m6CXwpEKk0lYZj1phQWnLZh4aPOtb4kgifNIOiFtjieiw==",
+  "dgSpecHash": "UvgXEIcZWUiHhJbHOFKuYICFt1YB1mdfvCgf8eSeqfLdPpHaKiRiQr1j2SWGghCVVchmhd6GePF0qYIeelNo9Q==",
   "success": true,
   "projectFilePath": "C:\\PRJs\\ASM_PRJs\\gh\\Filter.GUI\\Filter.GUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nikod\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\nikod\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

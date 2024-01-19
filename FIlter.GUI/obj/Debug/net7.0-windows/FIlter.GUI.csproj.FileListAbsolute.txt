@@ -23,7 +23,6 @@ C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\Filter.GUI.deps.json
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\Filter.GUI.runtimeconfig.json
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\Filter.GUI.dll
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\Filter.GUI.pdb
-C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\HighLevel.dll
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\Filter.GUI.csproj.AssemblyReference.cache
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.FIltrApp.resources
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\Filter.GUI.Properties.Resources.resources
@@ -39,4 +38,11 @@ C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\refint\Filter.GUI.dll
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\Filter.GUI.pdb
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\Filter.GUI.genruntimeconfig.cache
 C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\ref\Filter.GUI.dll
-C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\HighLevel.pdb
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\CSharp.dll
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\CSharp.pdb
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\OxyPlot.dll
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\OxyPlot.WindowsForms.dll
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\Filter.GUI.Histogram.resources
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\bin\Debug\net7.0-windows\pl-PL\Filter.GUI.resources.dll
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\FIlter.GUI.FIltrApp.pl-PL.resources
+C:\PRJs\ASM_PRJs\gh\Filter.GUI\obj\Debug\net7.0-windows\pl-PL\Filter.GUI.resources.dll
