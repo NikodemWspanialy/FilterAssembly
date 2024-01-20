@@ -1,0 +1,10 @@
+C:\Users\nikod\Desktop\PublishASM\Filter.GUI.exe
+C:\Users\nikod\Desktop\PublishASM\Filter.GUI.dll
+C:\Users\nikod\Desktop\PublishASM\Filter.GUI.deps.json
+C:\Users\nikod\Desktop\PublishASM\Filter.GUI.runtimeconfig.json
+C:\Users\nikod\Desktop\PublishASM\Filter.GUI.pdb
+C:\Users\nikod\Desktop\PublishASM\pl-PL\Filter.GUI.resources.dll
+C:\Users\nikod\Desktop\PublishASM\OxyPlot.dll
+C:\Users\nikod\Desktop\PublishASM\OxyPlot.WindowsForms.dll
+C:\Users\nikod\Desktop\PublishASM\CSharp.dll
+C:\Users\nikod\Desktop\PublishASM\CSharp.pdb

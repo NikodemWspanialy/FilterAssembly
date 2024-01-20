@@ -1,5 +1,5 @@
 .data
-    dzielnik dd 0.33, 0.33, 0.33, 1.0 
+    dzielnik dd 0.33, 0.33, 0.33, 1.0 ;sta³a dzielnikowa
 .code
 filter proc
     ; Argumenty funkcji: bytes, start, koniec
@@ -13,44 +13,26 @@ filter proc
 
     xor r11, r11 ; xor aby mieæ pewnoœæ ze w rejestrze r11 nic siê nie znajduje
     xor r12, r12 ; xor aby mieæ pewnoœæ ze w rejestrze r12 nic siê nie znajduje
-    mov r11, rcx ; wskaznik na poczatek tabicy wppisujemy z rcx do r11
-    mov r12, rdx ; index tablicy (punkt poczatku iteracji) wpisujemy do rejestru r12
-    shl r12, 2
-    shl r8, 2    ; pomnozenie indexu koncowego przez 4
-    movups xmm2, [dzielnik] ; wpisanie do xmm2 dzielnika 
-start_loop:
+    mov r11, rcx ; wskaznik na poczatek tabicy wppisujemy z rcx do r11 (z rcx)
+    mov r12, rdx ; index tablicy (punkt poczatku iteracji) wpisujemy do rejestru r12 (z rdx)
+    shl r12, 2   ; pomnozenie indexu startu przez 4 (r12)
+    shl r8, 2    ; pomnozenie indexu koncowego przez 4 (r8)
+    movups xmm2, [dzielnik] ; wpisanie do xmm2 dzielnik z sekcji data
+start_loop:         ; etykieta pêtli g³ownej
         cmp r12, r8 ; Porównaj iterator z koñcem, jeœli iterator >= koniec, to opuœæ pêtlê
         jae endloop ; skok warunkowy do etykiety endloop
 
-        movdqu xmm0, oword ptr[r11 + r12]
+        movdqu xmm0, oword ptr[r11 + r12] ;pobranie jednego pixela z tablicy
         mulps xmm0, xmm2 ; mnozenie r g b a razy dzielnik 
+                          ; teraz w xmm0 znajduje sie: R,G,B,A (pomnozone razy wspo³czynnik)
+        haddps xmm0, xmm0 ; zsumowanie - wynik: R+G, B+A, R+G, B+A
+        haddps xmm0, xmm0 ; ponowne zsumowanie - wszêdzie s¹ sumy wszystkich
 
-        haddps xmm0, xmm0
-        haddps xmm0, xmm0
-
-        movdqu oword ptr[r9 + r12], xmm0
-        add r12, 16
-        jmp start_loop ; powtórz pêtle
-        ;xor rax, rax ; xor aby mieæ pewnoœæ ze w rejestrze nic siê nie znajduje
-        ;xor rdx, rdx ; xor aby mieæ pewnoœæ ze w rejestrze nic siê nie znajduje
-        ;mov al, byte ptr [r11 + r12] ;do al wpisujemy pierwsz¹ wartoœæ tablicy (R) z padresu r11 - wska¿nik na tablice, r12 - iterator
-        ;mov dl, byte ptr [r11 + r12 + 1] ; do dl wpisujemy drug¹ wartoœæ tablicy (G)
-        ;add ax, dx ; dodajemy do ax, dx - w ax teraz suma R oraz G
-        ;xor rdx, rdx ; czyœcimy rejestr rdx
-        ;mov dl, byte ptr [r11 + r12 + 2] ; do rejestru dl wpisujemy trzeci¹ wartoœæ talicy (B)
-        ;add ax, dx ; oddajemy rejestry - teraz a ax suma R+G+B
-        ;xor rdx,rdx ; czyœcimy rejestr rdx
-        ;div r10 ; dzielimy rejest rax przez zawartosc r10 wynik w rax - wynik w ax reszta w dx 
-        ;mov [r9 + r12], al ; Zapisz œredni¹ do tablicy w miejscu wskazywanym przez iterator 
-        ;mov [r9 + r12 + 1], al ; Zapisz œredni¹ do tablicy w miejscu wskazywanym przez iterator + 1
-        ;mov [r9 + r12 + 2], al ; Zapisz œredni¹ do tablicy w miejscu wskazywanym przez iterator + 2 
-
-        ;add r12, 3 ; Przesuñ iterator o 3 bajty
-        
-       
-        ;jmp start_loop ; Powtórz pêtlê
+        movdqu oword ptr[r9 + r12], xmm0 ; wpisanie wartoœci do nowej tablicy
+        add r12, 16                     ;incrementacja iteratora o 1 pixela (16 bajtów)
+        jmp start_loop ; skok bezwarunkowy do pocz¹tku pêtli
 
 endloop:
-ret
+ret                     ;koniec programu
 filter endp
 end 

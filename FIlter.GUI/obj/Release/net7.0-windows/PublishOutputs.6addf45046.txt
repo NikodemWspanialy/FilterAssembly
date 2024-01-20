@@ -1,0 +1,10 @@
+C:\PRJs\ASM\filtr\Filter.GUI.exe
+C:\PRJs\ASM\filtr\Filter.GUI.dll
+C:\PRJs\ASM\filtr\Filter.GUI.deps.json
+C:\PRJs\ASM\filtr\Filter.GUI.runtimeconfig.json
+C:\PRJs\ASM\filtr\Filter.GUI.pdb
+C:\PRJs\ASM\filtr\pl-PL\Filter.GUI.resources.dll
+C:\PRJs\ASM\filtr\OxyPlot.dll
+C:\PRJs\ASM\filtr\OxyPlot.WindowsForms.dll
+C:\PRJs\ASM\filtr\CSharp.dll
+C:\PRJs\ASM\filtr\CSharp.pdb

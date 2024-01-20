@@ -24,7 +24,7 @@ namespace FIlter.GUI.Models
         private long startPoint;
         private long endPoint;
 
-        [DllImport(@"C:\PRJs\ASM_PRJs\gh\x64\Debug\Assembly.dll")]
+        [DllImport(@"C:\PRJs\ASM_PRJs\gh\x64\Release\Assembly.dll")]
         public static extern void filter(float[] p, long sp, long ep, float[] r);
 
         public AsmClass(ref float[] obraz, long sp, long ep, ref float[] returnImage)
