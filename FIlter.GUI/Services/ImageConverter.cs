@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Numerics;
+using System.Diagnostics.Metrics;
 
 namespace Filter.GUI.Services
 {
@@ -13,18 +14,15 @@ namespace Filter.GUI.Services
         public static float[] ConvertToByteArray(Bitmap bitmap)
         {
             var array = new float[bitmap.Height * bitmap.Width * 4];
+            var counter = 0;
             for (int i = 0; i < bitmap.Height; i++)
             {
                 for (int j = 0; j < bitmap.Width; j++)
                 {
-
-                    float r = bitmap.GetPixel(j, i).R;
-                    float g = bitmap.GetPixel(j, i).G;
-                    float b = bitmap.GetPixel(j, i).B;
-                    array[i * bitmap.Width * 4 + j * 4] = r;
-                    array[i * bitmap.Width * 4 + j * 4 + 1] = g;
-                    array[i * bitmap.Width * 4 + j * 4 + 2] = b;
-                    array[i * bitmap.Width * 4 + j * 4 + 3] = 0;
+                    array[counter++] = bitmap.GetPixel(j, i).R;
+                    array[counter++] = bitmap.GetPixel(j, i).G;
+                    array[counter++] = bitmap.GetPixel(j, i).B;
+                    array[counter++] = 0;
 
                 }
             }
@@ -37,12 +35,14 @@ namespace Filter.GUI.Services
         public static Bitmap ConvertToBitmap(float[] image, int RowNumber)
         {
             Bitmap bitmap = new Bitmap(RowNumber, (image.Length / 4) / RowNumber);
+            var counter = 0;
             for (int i = 0; i < bitmap.Height; i++)
             {
                 for (int j = 0; j < bitmap.Width; j++)
                 {
-                    Color color = Color.FromArgb((byte)image[i * RowNumber * 4 + j * 4], (byte)image[i * RowNumber * 4 + j * 4 + 1],
-                        (byte)image[i * RowNumber * 4 + j * 4 + 2]);
+                    Color color = Color.FromArgb((byte)image[counter++], (byte)image[counter++],
+                        (byte)image[counter++]);
+                    ++counter;
                     bitmap.SetPixel(j, i, color);
                 }
             }

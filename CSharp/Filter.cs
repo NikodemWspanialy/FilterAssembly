@@ -36,7 +36,7 @@ namespace CSharp
                     catch (Exception e)
                     {
                         //co tu rpboc 
-                        Console.WriteLine("if program hit this place something gone wrong");
+                        Console.WriteLine($"if program hit this place something gone wrong, exception message {e.Message}");
                     }
                 }
             }

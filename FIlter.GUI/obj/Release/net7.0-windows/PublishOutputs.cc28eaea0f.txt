@@ -1,0 +1,10 @@
+C:\PRJs\ASM_PRJs\publish4\Filter.GUI.exe
+C:\PRJs\ASM_PRJs\publish4\Filter.GUI.dll
+C:\PRJs\ASM_PRJs\publish4\Filter.GUI.deps.json
+C:\PRJs\ASM_PRJs\publish4\Filter.GUI.runtimeconfig.json
+C:\PRJs\ASM_PRJs\publish4\Filter.GUI.pdb
+C:\PRJs\ASM_PRJs\publish4\pl-PL\Filter.GUI.resources.dll
+C:\PRJs\ASM_PRJs\publish4\OxyPlot.dll
+C:\PRJs\ASM_PRJs\publish4\OxyPlot.WindowsForms.dll
+C:\PRJs\ASM_PRJs\publish4\CSharp.dll
+C:\PRJs\ASM_PRJs\publish4\CSharp.pdb

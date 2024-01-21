@@ -46,6 +46,7 @@
             groupBox2 = new GroupBox();
             TimeList = new ListView();
             HistogramButton = new Button();
+            ResetListButton = new Button();
             LenguegeBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)baseImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)editImage).BeginInit();
@@ -55,11 +56,12 @@
             // openFileDialog
             // 
             openFileDialog.FileName = "openFileDialog";
+            resources.ApplyResources(openFileDialog, "openFileDialog");
             // 
             // FileButtton
             // 
-            FileButtton.BackColor = Color.Khaki;
             resources.ApplyResources(FileButtton, "FileButtton");
+            FileButtton.BackColor = Color.Khaki;
             FileButtton.Name = "FileButtton";
             FileButtton.UseVisualStyleBackColor = false;
             FileButtton.Click += FileButtton_Click;
@@ -87,9 +89,9 @@
             // 
             // LenguegeBox
             // 
+            resources.ApplyResources(LenguegeBox, "LenguegeBox");
             LenguegeBox.Controls.Add(radioButton2);
             LenguegeBox.Controls.Add(radioButton1);
-            resources.ApplyResources(LenguegeBox, "LenguegeBox");
             LenguegeBox.Name = "LenguegeBox";
             LenguegeBox.TabStop = false;
             // 
@@ -114,8 +116,8 @@
             // 
             // ConfirmButton
             // 
-            ConfirmButton.BackColor = Color.Khaki;
             resources.ApplyResources(ConfirmButton, "ConfirmButton");
+            ConfirmButton.BackColor = Color.Khaki;
             ConfirmButton.Name = "ConfirmButton";
             ConfirmButton.UseVisualStyleBackColor = false;
             ConfirmButton.Click += ConfirmButton_Click;
@@ -140,8 +142,8 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(ThreadLabel);
             resources.ApplyResources(groupBox1, "groupBox1");
+            groupBox1.Controls.Add(ThreadLabel);
             groupBox1.Name = "groupBox1";
             groupBox1.TabStop = false;
             // 
@@ -153,25 +155,34 @@
             // 
             // TimeList
             // 
-            TimeList.BackColor = Color.Khaki;
             resources.ApplyResources(TimeList, "TimeList");
+            TimeList.BackColor = Color.Khaki;
             TimeList.Name = "TimeList";
             TimeList.UseCompatibleStateImageBehavior = false;
             TimeList.View = View.List;
             // 
             // HistogramButton
             // 
-            HistogramButton.BackColor = Color.Khaki;
             resources.ApplyResources(HistogramButton, "HistogramButton");
+            HistogramButton.BackColor = Color.Khaki;
             HistogramButton.Name = "HistogramButton";
             HistogramButton.UseVisualStyleBackColor = false;
             HistogramButton.Click += button1_Click;
+            // 
+            // ResetListButton
+            // 
+            resources.ApplyResources(ResetListButton, "ResetListButton");
+            ResetListButton.BackColor = Color.Khaki;
+            ResetListButton.Name = "ResetListButton";
+            ResetListButton.UseVisualStyleBackColor = false;
+            ResetListButton.Click += ResetListButton_Click;
             // 
             // FIltrApp
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 255, 204);
+            Controls.Add(ResetListButton);
             Controls.Add(HistogramButton);
             Controls.Add(TimeList);
             Controls.Add(groupBox2);
@@ -215,5 +226,6 @@
         private GroupBox groupBox2;
         private ListView TimeList;
         private Button HistogramButton;
+        private Button ResetListButton;
     }
 }

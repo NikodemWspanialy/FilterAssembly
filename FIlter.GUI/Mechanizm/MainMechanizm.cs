@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Filter.GUI.Services;
+using System.Diagnostics;
 
 namespace Filter.GUI.Mechanizm
 {
@@ -52,9 +53,9 @@ namespace Filter.GUI.Mechanizm
                 Image = Filter.GUI.Services.ImageConverter.ConvertToByteArray(oldBitmap);
                 return true;
             }
-            catch (Exception ex) { return false; }
+            catch (Exception ex) { Console.WriteLine(ex.Message); return false; }
         }
-        public TimeSpan run()
+        public Int64 run()
         {
             returnImage = new float[Image.Length];
             switch (lenguage)
@@ -70,23 +71,19 @@ namespace Filter.GUI.Mechanizm
             }
             foreach (var f in funcs) { threads.Add(new Task(() => f.Execute())); }
 
-            DateTime timeBefore = DateTime.Now;
+            var stopwatch = new Stopwatch();
+            stopwatch.Restart();
             {
                 Parallel.ForEach(threads, (task) => task.Start());
                 Task.WaitAll(threads.ToArray());
-
-                //Test
-                //int numer = 1;
-                //threads[numer].Start();
-                //Task.WaitAll(threads[numer]);
-                //koniec testu
             }
-            DateTime timeAfter = DateTime.Now;
+            stopwatch.Stop();
+            var ticks = stopwatch.ElapsedTicks;
 
             Bitmap newBitmap = Services.ImageConverter.ConvertToBitmap(returnImage, WidthNumber);
             newImagePath = Services.ImageConverter.SaveToFIle(newBitmap, PathToImage, (int)threds);
 
-            return timeAfter.Subtract(timeBefore);
+            return ticks;
         }
     }
 }

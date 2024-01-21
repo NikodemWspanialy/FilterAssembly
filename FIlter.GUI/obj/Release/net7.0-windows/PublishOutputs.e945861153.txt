@@ -1,0 +1,10 @@
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\Filter.GUI.exe
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\Filter.GUI.dll
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\Filter.GUI.deps.json
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\Filter.GUI.runtimeconfig.json
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\Filter.GUI.pdb
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\pl-PL\Filter.GUI.resources.dll
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\OxyPlot.dll
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\OxyPlot.WindowsForms.dll
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\CSharp.dll
+C:\PRJs\ASM_PRJs\publish4\black_white_NW\CSharp.pdb

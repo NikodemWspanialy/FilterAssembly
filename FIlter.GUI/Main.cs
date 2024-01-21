@@ -27,7 +27,7 @@ namespace FIlter.GUI
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog.Filter = "Image Files|*.jpg;*.bmp;|jpg Files|*.jpg|bmp Files|*.bmp";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
@@ -101,31 +101,16 @@ namespace FIlter.GUI
                 return;
             }
             fileErrorLabel.Visible = false;
-            var timeElpsed = Program.run();
-            var seconds = timeElpsed.Seconds;
-            var miliseconds = timeElpsed.Milliseconds;
-            var item = seconds.ToString() + ".";
-            if (miliseconds >= 100)
-            {
-                item = item + miliseconds.ToString();
-            }
-            else if (miliseconds >= 10)
-            {
-                item = item + "0" + miliseconds.ToString();
-            }
-            else
-            {
-                item = item + "00" + miliseconds.ToString();
-            }
-            TimeList.Items.Add(item.ToString());
+            var ticks = Program.run();
+            TimeList.Items.Add(ticks.ToString());
             if (Program.newImagePath != null)
             {
                 editImage.ImageLocation = Program.newImagePath;
                 editedPath = Program.newImagePath;
                 basePath = pathToImage;
+                HistogramButton.Enabled = true;
             }
             ConfirmButton.Enabled = true;
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -137,6 +122,15 @@ namespace FIlter.GUI
                 histogram.Show();
             }
             HistogramButton.Enabled = true;
+        }
+
+
+        private void ResetListButton_Click(object sender, EventArgs e)
+        {
+            if (TimeList.Items.Count != 0)
+            {
+                TimeList.Items.Clear();
+            }
         }
     }
 }
