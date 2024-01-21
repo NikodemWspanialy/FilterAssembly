@@ -145,5 +145,17 @@ namespace FIlter.GUI
             double average = values.Count > 0 ? values.Average() : 0;
             averageButton.Text = $"{average:F2}";
         }
+
+        private void submit10_Click(object sender, EventArgs e)
+        {
+            submit10.Enabled = false;
+            ConfirmButton.Enabled = false;
+            for(int i = 0; i < 10; i++)
+            {
+                ConfirmButton_Click(sender, e);
+            }
+            submit10.Enabled = true;
+            ConfirmButton.Enabled = true;
+        }
     }
 }

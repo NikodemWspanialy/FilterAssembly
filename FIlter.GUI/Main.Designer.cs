@@ -49,6 +49,7 @@
             ResetListButton = new Button();
             averageButton = new Button();
             label1 = new Label();
+            submit10 = new Button();
             LenguegeBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)baseImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)editImage).BeginInit();
@@ -192,11 +193,20 @@
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
             // 
+            // submit10
+            // 
+            resources.ApplyResources(submit10, "submit10");
+            submit10.BackColor = Color.Khaki;
+            submit10.Name = "submit10";
+            submit10.UseVisualStyleBackColor = false;
+            submit10.Click += submit10_Click;
+            // 
             // FIltrApp
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 255, 204);
+            Controls.Add(submit10);
             Controls.Add(label1);
             Controls.Add(averageButton);
             Controls.Add(ResetListButton);
@@ -246,5 +256,6 @@
         private Button ResetListButton;
         private Button averageButton;
         private Label label1;
+        private Button submit10;
     }
 }

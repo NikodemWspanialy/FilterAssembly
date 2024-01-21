@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Filter.GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81970ba88744363334b637a06956b3a1145b51de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e71db58fd7eaa33a0bda391c11b4cec5c6e100fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Filter.GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Filter.GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
