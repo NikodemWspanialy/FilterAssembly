@@ -58,6 +58,8 @@ namespace Filter.GUI.Mechanizm
         public Int64 run()
         {
             returnImage = new float[Image.Length];
+            var stopwatch = new Stopwatch();
+            stopwatch.Restart();
             switch (lenguage)
             {
                 case Lenguage.CS:
@@ -69,10 +71,9 @@ namespace Filter.GUI.Mechanizm
                 default:
                     break;
             }
+
             foreach (var f in funcs) { threads.Add(new Task(() => f.Execute())); }
 
-            var stopwatch = new Stopwatch();
-            stopwatch.Restart();
             {
                 Parallel.ForEach(threads, (task) => task.Start());
                 Task.WaitAll(threads.ToArray());
