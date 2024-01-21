@@ -117,391 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LenguegeBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 108</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TimeList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;editImage.Name" xml:space="preserve">
-    <value>editImage</value>
-  </data>
-  <data name="ThreadLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="HistogramButton.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
-  </data>
-  <data name="&gt;&gt;fileErrorLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="ThreadLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 21</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;ResetListButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textLabel.Name" xml:space="preserve">
-    <value>textLabel</value>
-  </data>
-  <data name="LenguegeBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="FileButtton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;FileButtton.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;ResetListButton.Name" xml:space="preserve">
-    <value>ResetListButton</value>
-  </data>
-  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;baseImage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;HistogramButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AddButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TimeList.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
-    <value>openFileDialog</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="HistogramButton.Text" xml:space="preserve">
-    <value>Histogram</value>
-  </data>
-  <data name="&gt;&gt;ThreadLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="FileButtton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 39</value>
-  </data>
-  <data name="&gt;&gt;LenguegeBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ThreadLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>results</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LenguegeBox.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;textLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;FileButtton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ResetListButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ResetListButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FileButtton.Text" xml:space="preserve">
-    <value>Wybierz plik</value>
-  </data>
-  <data name="&gt;&gt;HistogramButton.Name" xml:space="preserve">
-    <value>HistogramButton</value>
-  </data>
-  <data name="&gt;&gt;FileButtton.Name" xml:space="preserve">
-    <value>FileButtton</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="editImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="fileErrorLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt, style=Bold</value>
-  </data>
-  <data name="LenguegeBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Emoji, 14.25pt, style=Bold</value>
-  </data>
-  <data name="baseImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="ResetListButton.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;baseImage.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;baseImage.Name" xml:space="preserve">
-    <value>baseImage</value>
-  </data>
-  <data name="&gt;&gt;HistogramButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 38</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Threads</value>
-  </data>
-  <data name="&gt;&gt;fileErrorLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;editImage.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;AddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TimeList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 63</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ConfirmButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 32</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FIltrApp</value>
+  <data name="FileButtton.Text" xml:space="preserve">
+    <value>Wybierz plik</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
-    <value>LenguegeBox</value>
+  <data name="MinusButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TimeList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="textLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 252</value>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Emoji, 11.25pt, style=Bold, Italic</value>
   </data>
-  <data name="&gt;&gt;ConfirmButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="fileErrorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 79</value>
   </data>
-  <data name="&gt;&gt;HistogramButton.Parent" xml:space="preserve">
+  <data name="ResetListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;editImage.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;baseImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton2.Text" xml:space="preserve">
-    <value>Assembler</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="LenguegeBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Emoji, 14.25pt, style=Bold</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Filtr Biało Czarny</value>
   </data>
+  <data name="&gt;&gt;AvaregeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MinusButton.Name" xml:space="preserve">
+    <value>MinusButton</value>
+  </data>
+  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;averageButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 76</value>
   </data>
-  <data name="textLabel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
-    <value>radioButton1</value>
-  </data>
-  <data name="ConfirmButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="TimeList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Emoji, 8.25pt, style=Bold, Italic</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Emoji, 14.25pt, style=Bold</value>
-  </data>
-  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fileErrorLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="editImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 177</value>
-  </data>
-  <data name="baseImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 128</value>
-  </data>
-  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 25</value>
-  </data>
-  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
-    <value>AddButton</value>
-  </data>
-  <data name="ThreadLabel.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="baseImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 26</value>
-  </data>
-  <data name="&gt;&gt;ThreadLabel.Name" xml:space="preserve">
-    <value>ThreadLabel</value>
-  </data>
-  <data name="textLabel.Text" xml:space="preserve">
-    <value>*
-</value>
-  </data>
-  <data name="&gt;&gt;ThreadLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="HistogramButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 311</value>
-  </data>
-  <data name="fileErrorLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;TimeList.Name" xml:space="preserve">
-    <value>TimeList</value>
-  </data>
-  <data name="FileButtton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 37</value>
-  </data>
-  <data name="editImage.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 23</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="fileErrorLabel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;ConfirmButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TimeList.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="ResetListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 314</value>
-  </data>
-  <data name="&gt;&gt;MinusButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ConfirmButton.Text" xml:space="preserve">
-    <value>Wyślij</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
-  </data>
-  <data name="TimeList.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="fileErrorLabel.Text" xml:space="preserve">
-    <value>Error in file</value>
-  </data>
-  <data name="ConfirmButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 32</value>
-  </data>
-  <data name="&gt;&gt;ConfirmButton.Name" xml:space="preserve">
-    <value>ConfirmButton</value>
-  </data>
-  <data name="&gt;&gt;LenguegeBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radioButton1.Text" xml:space="preserve">
-    <value>C#</value>
-  </data>
-  <data name="&gt;&gt;MinusButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ThreadLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 30pt</value>
-  </data>
-  <data name="AddButton.Text" xml:space="preserve">
-    <value>W</value>
-  </data>
-  <data name="&gt;&gt;TimeList.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="editImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 128</value>
-  </data>
-  <data name="ConfirmButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;ConfirmButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 315</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MinusButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 23</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="fileErrorLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;FileButtton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fileErrorLabel.Name" xml:space="preserve">
-    <value>fileErrorLabel</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 229</value>
-  </data>
-  <data name="&gt;&gt;MinusButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;editImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 25</value>
-  </data>
-  <data name="fileErrorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 25</value>
+  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3512,109 +3182,493 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+  <data name="ConfirmButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 308</value>
   </data>
-  <data name="MinusButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 279</value>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="LenguegeBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 115</value>
-  </data>
-  <data name="textLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 77</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
-    <value>LenguegeBox</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ThreadLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 54</value>
-  </data>
-  <data name="FileButtton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15pt</value>
-  </data>
-  <data name="&gt;&gt;LenguegeBox.Name" xml:space="preserve">
-    <value>LenguegeBox</value>
-  </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Emoji, 11.25pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="radioButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Emoji, 12pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;editImage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;baseImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 63</value>
+  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+    <value>LenguegeBox</value>
   </data>
-  <data name="HistogramButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 36</value>
+  <data name="&gt;&gt;MinusButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="editImage.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>128, 128</value>
-  </data>
-  <data name="LenguegeBox.Text" xml:space="preserve">
-    <value>Lenguage</value>
-  </data>
-  <data name="&gt;&gt;ThreadLabel.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;editImage.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="baseImage.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 32</value>
-  </data>
-  <data name="&gt;&gt;textLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TimeList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 277</value>
-  </data>
-  <data name="MinusButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="fileErrorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 79</value>
-  </data>
-  <data name="&gt;&gt;MinusButton.Name" xml:space="preserve">
-    <value>MinusButton</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>452, 381</value>
-  </data>
-  <data name="MinusButton.Text" xml:space="preserve">
-    <value>M</value>
+  <data name="ThreadLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 30pt</value>
   </data>
   <data name="textLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>12, 15</value>
   </data>
+  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 63</value>
+  </data>
+  <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TimeList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;ThreadLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;AvaregeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LenguegeBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="editImage.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;TimeList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ConfirmButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 351</value>
+  </data>
+  <data name="editImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 177</value>
+  </data>
+  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 23</value>
+  </data>
+  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 25</value>
+  </data>
+  <data name="editImage.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>128, 128</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="baseImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="HistogramButton.Text" xml:space="preserve">
+    <value>Histogram</value>
+  </data>
+  <data name="TimeList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 63</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>Assembler</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
+  </data>
+  <data name="&gt;&gt;TimeList.Name" xml:space="preserve">
+    <value>TimeList</value>
+  </data>
+  <data name="&gt;&gt;ThreadLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FileButtton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15pt</value>
+  </data>
+  <data name="&gt;&gt;TimeList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;FileButtton.Name" xml:space="preserve">
+    <value>FileButtton</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FIltrApp</value>
+  </data>
+  <data name="&gt;&gt;ThreadLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ThreadLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LenguegeBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 115</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="TimeList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 277</value>
+  </data>
+  <data name="textLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="AvaregeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;fileErrorLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FileButtton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LenguegeBox.Name" xml:space="preserve">
+    <value>LenguegeBox</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 38</value>
+  </data>
   <data name="baseImage.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
+  </data>
+  <data name="&gt;&gt;ThreadLabel.Name" xml:space="preserve">
+    <value>ThreadLabel</value>
+  </data>
+  <data name="fileErrorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ConfirmButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fileErrorLabel.Text" xml:space="preserve">
+    <value>Error in file</value>
+  </data>
+  <data name="editImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;ResetListButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ThreadLabel.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ConfirmButton.Name" xml:space="preserve">
+    <value>ConfirmButton</value>
+  </data>
+  <data name="&gt;&gt;LenguegeBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;HistogramButton.Name" xml:space="preserve">
+    <value>HistogramButton</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
+    <value>AddButton</value>
+  </data>
+  <data name="fileErrorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 25</value>
+  </data>
+  <data name="TimeList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Emoji, 8.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="AvaregeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 318</value>
+  </data>
+  <data name="textLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 77</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
+    <value>radioButton2</value>
+  </data>
+  <data name="&gt;&gt;averageButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;editImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FileButtton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="fileErrorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;fileErrorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HistogramButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 311</value>
+  </data>
+  <data name="&gt;&gt;ResetListButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LenguegeBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="&gt;&gt;baseImage.Name" xml:space="preserve">
+    <value>baseImage</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+    <value>LenguegeBox</value>
+  </data>
+  <data name="MinusButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 23</value>
   </data>
   <data name="radioButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Emoji, 12pt, style=Bold</value>
   </data>
-  <data name="ConfirmButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 308</value>
+  <data name="MinusButton.Text" xml:space="preserve">
+    <value>M</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="radioButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Emoji, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;ConfirmButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="baseImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 128</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ResetListButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Emoji, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ConfirmButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="&gt;&gt;LenguegeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LenguegeBox.Text" xml:space="preserve">
+    <value>Lenguage</value>
+  </data>
+  <data name="ThreadLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Threads</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;averageButton.Name" xml:space="preserve">
+    <value>averageButton</value>
+  </data>
+  <data name="&gt;&gt;AvaregeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="baseImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 26</value>
+  </data>
+  <data name="&gt;&gt;ConfirmButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 315</value>
+  </data>
+  <data name="&gt;&gt;fileErrorLabel.Name" xml:space="preserve">
+    <value>fileErrorLabel</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="averageButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;FileButtton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fileErrorLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;fileErrorLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fileErrorLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TimeList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;baseImage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;HistogramButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TimeList.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>results</value>
+  </data>
+  <data name="ThreadLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;baseImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HistogramButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ConfirmButton.Text" xml:space="preserve">
+    <value>Wyślij</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>452, 381</value>
+  </data>
+  <data name="LenguegeBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 108</value>
+  </data>
+  <data name="&gt;&gt;MinusButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;AvaregeLabel.Name" xml:space="preserve">
+    <value>AvaregeLabel</value>
+  </data>
+  <data name="TimeList.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;averageButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HistogramButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ResetListButton.Name" xml:space="preserve">
+    <value>ResetListButton</value>
+  </data>
+  <data name="&gt;&gt;editImage.Name" xml:space="preserve">
+    <value>editImage</value>
+  </data>
+  <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 252</value>
+  </data>
+  <data name="&gt;&gt;FileButtton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textLabel.Name" xml:space="preserve">
+    <value>textLabel</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MinusButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 279</value>
+  </data>
+  <data name="ThreadLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 54</value>
+  </data>
+  <data name="&gt;&gt;MinusButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FileButtton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 39</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;textLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 229</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 32</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
+    <value>radioButton1</value>
+  </data>
+  <data name="textLabel.Text" xml:space="preserve">
+    <value>*
+</value>
+  </data>
+  <data name="ResetListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 314</value>
+  </data>
+  <data name="&gt;&gt;textLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 25</value>
+  </data>
+  <data name="FileButtton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 37</value>
+  </data>
+  <data name="HistogramButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 36</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="editImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 128</value>
+  </data>
+  <data name="averageButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 317</value>
+  </data>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -3623,7 +3677,7 @@
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>pl-PL</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

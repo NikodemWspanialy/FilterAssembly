@@ -47,6 +47,8 @@
             TimeList = new ListView();
             HistogramButton = new Button();
             ResetListButton = new Button();
+            averageButton = new Button();
+            label1 = new Label();
             LenguegeBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)baseImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)editImage).BeginInit();
@@ -177,11 +179,26 @@
             ResetListButton.UseVisualStyleBackColor = false;
             ResetListButton.Click += ResetListButton_Click;
             // 
+            // averageButton
+            // 
+            resources.ApplyResources(averageButton, "averageButton");
+            averageButton.BackColor = Color.Khaki;
+            averageButton.Name = "averageButton";
+            averageButton.UseVisualStyleBackColor = false;
+            averageButton.Click += averageButton_Click;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
+            // 
             // FIltrApp
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 255, 204);
+            Controls.Add(label1);
+            Controls.Add(averageButton);
             Controls.Add(ResetListButton);
             Controls.Add(HistogramButton);
             Controls.Add(TimeList);
@@ -227,5 +244,7 @@
         private ListView TimeList;
         private Button HistogramButton;
         private Button ResetListButton;
+        private Button averageButton;
+        private Label label1;
     }
 }

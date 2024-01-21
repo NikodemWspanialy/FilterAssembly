@@ -10,6 +10,7 @@ namespace FIlter.GUI
 {
     public partial class FIltrApp : Form
     {
+        private List<double> values = new List<double>();
         uint threds = (uint)Environment.ProcessorCount;
         Lenguage lenguage = Lenguage.CS;
         string pathToImage;
@@ -102,7 +103,9 @@ namespace FIlter.GUI
             }
             fileErrorLabel.Visible = false;
             var ticks = Program.run();
+            values.Add(ticks);
             TimeList.Items.Add(ticks.ToString());
+            getAverage();
             if (Program.newImagePath != null)
             {
                 editImage.ImageLocation = Program.newImagePath;
@@ -130,7 +133,17 @@ namespace FIlter.GUI
             if (TimeList.Items.Count != 0)
             {
                 TimeList.Items.Clear();
+                values.Clear();
             }
+        }
+        private void averageButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(averageButton.Text);
+        }
+        private void getAverage()
+        {
+            double average = values.Count > 0 ? values.Average() : 0;
+            averageButton.Text = $"{average:F2}";
         }
     }
 }
