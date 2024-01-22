@@ -15,13 +15,17 @@ namespace FIlter.GUI
         Lenguage lenguage = Lenguage.CS;
         string pathToImage;
         string editedPath, basePath;
-
+        MainMechanizm Program;
         public FIltrApp()
         {
             InitializeComponent();
             ThreadLabel.Text = threds.ToString();
         }
-
+        /// <summary>
+        /// opening file dialog and saving the path to image
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FileButtton_Click(object sender, EventArgs e)
         {
 
@@ -50,18 +54,30 @@ namespace FIlter.GUI
                 }
             }
         }
-
+        /// <summary>
+        /// seeting language to ASM
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             lenguage = Lenguage.ASM;
         }
-
+        /// <summary>
+        /// setting language to CS
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             lenguage = Lenguage.CS;
 
         }
-
+        /// <summary>
+        /// increment threads number
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddButton_Click(object sender, EventArgs e)
         {
             try
@@ -70,7 +86,11 @@ namespace FIlter.GUI
             }
             catch (Exception E) { return; }
         }
-
+        /// <summary>
+        /// decrement threads number
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MinusButton_Click(object sender, EventArgs e)
         {
             try
@@ -84,11 +104,15 @@ namespace FIlter.GUI
             catch (Exception E) { return; }
         }
 
-
+        /// <summary>
+        /// main program - applying filter
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             ConfirmButton.Enabled = false;
-            var Program = new MainMechanizm(lenguage);
+            Program = new MainMechanizm(lenguage);
             if (!Program.SetThreds(threds))
             {
                 ConfirmButton.Enabled = true;
@@ -115,7 +139,11 @@ namespace FIlter.GUI
             }
             ConfirmButton.Enabled = true;
         }
-
+        /// <summary>
+        /// Action on click, generating new Page with Histograms
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             HistogramButton.Enabled = false;
@@ -127,7 +155,11 @@ namespace FIlter.GUI
             HistogramButton.Enabled = true;
         }
 
-
+        /// <summary>
+        /// clearing time list
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ResetListButton_Click(object sender, EventArgs e)
         {
             if (TimeList.Items.Count != 0)
@@ -136,16 +168,28 @@ namespace FIlter.GUI
                 values.Clear();
             }
         }
+        /// <summary>
+        /// after click tthe average button, value is coping into user clipboard
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void averageButton_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(averageButton.Text);
         }
+        /// <summary>
+        /// counting average value for times in list
+        /// </summary>
         private void getAverage()
         {
             double average = values.Count > 0 ? values.Average() : 0;
             averageButton.Text = $"{average:F2}";
         }
-
+        /// <summary>
+        /// Generating program 10 times
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void submit10_Click(object sender, EventArgs e)
         {
             submit10.Enabled = false;

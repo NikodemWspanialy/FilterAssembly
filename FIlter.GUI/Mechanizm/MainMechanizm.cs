@@ -29,10 +29,19 @@ namespace Filter.GUI.Mechanizm
         //part 2
         List<IClass> funcs = new List<IClass>();
         List<Task> threads = new List<Task>();
+        /// <summary>
+        /// ctor 
+        /// </summary>
+        /// <param name="lenguage"> setting language</param>
         public MainMechanizm(Lenguage lenguage)
         {
             this.lenguage = lenguage;
         }
+        /// <summary>
+        /// setter for threads
+        /// </summary>
+        /// <param name="arg"></param>
+        /// <returns></returns>
         public bool SetThreds(uint arg)
         {
             try
@@ -42,6 +51,11 @@ namespace Filter.GUI.Mechanizm
             }
             catch (Exception ex) { return false; }
         }
+        /// <summary>
+        /// setter for image path, bitmap
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
         public bool SetImage(string file)
         {
             try
@@ -50,11 +64,15 @@ namespace Filter.GUI.Mechanizm
                 PathToImage = file;
                 Bitmap oldBitmap = Filter.GUI.Services.ImageConverter.GetBitMap(PathToImage);
                 WidthNumber = oldBitmap.Width;
-                Image = Filter.GUI.Services.ImageConverter.ConvertToByteArray(oldBitmap);
+                Image = Filter.GUI.Services.ImageConverter.ConvertToFloatArray(oldBitmap);
                 return true;
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); return false; }
         }
+        /// <summary>
+        /// generating threads and starting them 
+        /// </summary>
+        /// <returns>time in ticks</returns>
         public Int64 run()
         {
             returnImage = new float[Image.Length];
