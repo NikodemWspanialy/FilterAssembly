@@ -1,3 +1,15 @@
+; Autor: Nikodem Wspania³y
+; Data ukonczenia: 12.01.2024
+; Politechnika œl¹ska, Gliwice, semestr 5, Kurs Jêzyki Asemblerowe
+; Temat projektu: opracowanie oraz zaiplementowanie filtra szarosci
+; skrót algorytmu:
+; algorytm jest odpowiedzialny za konwersje obrazu na czarno bialy
+; pobieramy z tablicy wejsciowej kolejne 4 wartosci 
+; za pomoca wartosci wektorowych dodajemy je do siebie oraz dzielimy przez 3 (tutaj mnozymy przez dzielnik 0,33)
+; nowa wartosc wpisujemy w kolejne 4 miejsca tablicy wyjsciowej 
+; dzieki czemu na wyjsciu dostajemy tablice RGBARGBA... z wartosciami koncowymi dla filtra
+
+
 .data
     dzielnik dd 0.33, 0.33, 0.33, 1.0 ;sta³a dzielnikowa
 .code
